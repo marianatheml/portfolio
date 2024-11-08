@@ -1,17 +1,12 @@
-import Head from 'next/head';
+import React from 'react';
+import HeroSection from '../sections/HeroSection';
 
-export default function Home() {
+const Home: React.FC = () => {
   return (
     <>
-      <Head>
-        <title>Mariana Theml</title>
-        <meta
-          name="description"
-          content="Mariana Theml | My personal portfolio to showcase my work and skills as a software developer."
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-      </Head>
-      <main></main>
+      <HeroSection />
     </>
   );
-}
+};
+
+export default Home;
