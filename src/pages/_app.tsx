@@ -10,7 +10,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <Head>
         <title>Mariana Theml</title>
         <meta name="description" content="Welcome to my portfolio showcasing my projects and skills." />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/logo.ico" />
       </Head>
       <Navbar />
       <Component {...pageProps} />
