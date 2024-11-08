@@ -10,7 +10,6 @@ export default function Home() {
           content="Mariana Theml | My personal portfolio to showcase my work and skills as a software developer."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       <main></main>
     </>
