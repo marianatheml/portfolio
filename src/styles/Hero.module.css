@@ -1,0 +1,132 @@
+/* Hero Section Styles */
+.heroContainer {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  background: var(--background-color, #f3f4f6);
+  padding: 5rem;
+  height: 620px;
+  width: 100%;
+  opacity: 0;
+  animation: fadeIn 1.5s ease forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.txtSection {
+  width: 50rem;
+  align-content: end;
+}
+
+.heading {
+  font-size: 3rem;
+  color: var(--text-color, #111827);
+  margin-bottom: 0.5rem;
+}
+
+.highlight {
+  color: var(--highlight-color, #b8cd4a);
+  font-weight: bold;
+  display: inline-block;
+  transition: color 0.5s ease;
+}
+
+.heading:hover .highlight {
+  animation: colorPulse 1.5s ease infinite;
+}
+
+.subheading {
+  font-size: 1rem;
+  width: 47rem;
+  color: var(--text-color, #4b5563);
+}
+
+@keyframes colorPulse {
+  0% {
+    color: var(--highlight-color, #b8cd4a);
+    transform: rotate(0deg);
+  }
+
+  50% {
+    color: #333;
+    transform: rotate(-10deg);
+  }
+
+  100% {
+    color: var(--highlight-color, #aac139);
+    transform: rotate(0deg);
+  }
+}
+
+.image-container {
+  position: relative;
+  width: 250px;
+  height: 250px;
+}
+
+.image {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+
+.themeToggle {
+  position: absolute;
+  bottom: 3rem;
+  right: 5rem;
+  height: 3.5rem;
+  cursor: pointer;
+  border: none;
+  padding: 1rem;
+  border-radius: 50%;
+  background-color: var(--highlight-color, #aac139);
+}
+
+.theme-toggle span {
+  margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+  .heroContainer {
+    padding: 1rem 3rem;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-end;
+  }
+
+  .image {
+    margin-bottom: 2rem;
+  }
+
+  .txtSection {
+    width: 100%;
+  }
+
+  .heading {
+    font-size: 2rem;
+  }
+
+  .subheading {
+    font-size: 0.8rem;
+    width: 100%;
+  }
+
+  .themeToggle {
+    bottom: 1rem;
+    right: 2rem;
+    height: 2.5rem;
+    padding: 0.5rem;
+    border-radius: 50%;
+    background-color: var(--highlight-color, #aac139);
+  }
+}

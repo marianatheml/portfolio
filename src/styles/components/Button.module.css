@@ -1,0 +1,45 @@
+.button {
+    position: relative;
+    cursor: pointer;
+    background: transparent;
+    padding: 0;
+    width: 12rem;
+    height: auto;
+    color: var(--text-color, #333);
+    border: none;
+}
+
+.circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: #b8cd4a;
+    border-radius: 1.625rem;
+}
+
+
+.button:hover .circle {
+    width: 82%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+
+.text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 1rem 0;
+    margin: 0 0 0 -1.5rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.button:hover .text {
+    color: #333;
+}
