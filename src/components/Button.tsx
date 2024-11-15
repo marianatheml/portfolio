@@ -9,7 +9,8 @@ type ButtonProps = {
 const Button: React.FC<ButtonProps> = ({ text, onClick }) => {
   return (
     <button className={styles.button} onClick={onClick}>
-      {text}
+      <span className={styles.circle}/>
+      <span className={styles.text}>{text}</span>
     </button>
   );
 };

@@ -8,13 +8,13 @@
 .logo a {
   display: inline-block;
   font-size: 32px;
-  color: #333;
+  color: var(--text-color, #171616);
   text-decoration: none;
   transition: transform 0.5s ease, color 0.3s ease;
 }
 
 .logo a:hover {
-  color: #b8cd4a;
+  color: var(--highlight-color, #aac139);
   transform: scale(1.05);
 }
 
@@ -28,14 +28,14 @@
 
 .navLinks a {
   position: relative;
-  color: #333;
+  color: var(--text-color, #171616);
   text-decoration: none;
   padding-bottom: 4px;
   transition: color 0.3s ease;
 }
 
 .navLinks a:hover {
-  color: #b8cd4a;
+  color: var(--highlight-color, #aac139);
 }
 
 .navLinks a::after {
@@ -45,7 +45,7 @@
   bottom: 0;
   width: 0;
   height: 3px;
-  background-color: #b8cd4a;
+  background-color: var(--highlight-color, #aac139);
   transition: width 0.3s ease, left 0.3s ease;
 }
 
@@ -67,14 +67,14 @@
 .bar {
   width: 25px;
   height: 3px;
-  background-color: #333;
+  background-color: var(--text-color, #171616);
   margin: 4px 0;
   transition: 0.3s;
 }
 
 .hamburger:hover {
   .bar {
-    background-color: #b8cd4a;
+    background-color: var(--highlight-color, #aac139);
   }
 }
 
@@ -93,13 +93,14 @@
     padding: 20px 0;
     left: 0;
     width: 100%;
-    background-color: #f4f4f9;
+    background-color: var(--background-color, #f4f4f9);
     flex-direction: column;
     justify-content: top;
     align-items: center;
     gap: 12px;
     transition: transform 0.5s ease;
     transform: translateY(-150%);
+    z-index: 1;
   }
 
   .navOpen {
