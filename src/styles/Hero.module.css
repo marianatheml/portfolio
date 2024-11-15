@@ -96,7 +96,7 @@
 
 @media (max-width: 768px) {
   .heroContainer {
-    padding: 1rem 3rem;
+    padding: 1rem 2.5rem;
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
@@ -106,6 +106,8 @@
 
   .image {
     margin-bottom: 2rem;
+    width: 180px;
+    height: 180px;
   }
 
   .txtSection {
@@ -113,20 +115,22 @@
   }
 
   .heading {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .subheading {
-    font-size: 0.8rem;
+    font-size: 0.65rem;
     width: 100%;
   }
 
+  .txtSection Button {
+    margin-left: 1.5rem;
+  }
+
   .themeToggle {
-    bottom: 1rem;
-    right: 2rem;
+    bottom: 0.5rem;
+    right: 0.5em;
     height: 2.5rem;
     padding: 0.5rem;
-    border-radius: 50%;
-    background-color: var(--highlight-color, #aac139);
   }
 }
